@@ -1,7 +1,7 @@
 body {
   background-color: #3f3f3f;
   color: #dcdccc;
-  font-family: monospace;
+  font-family: "mononoki", monospace;
   font-size: 8vw;
   margin: auto;
   text-align: center;
@@ -27,6 +27,6 @@ a {
   background-color: #656555;
   border: none;
   color: #2b2b2b;
-  font-family: monospace;
+  font-family: "mononoki", monospace;
   font-size: 5vw;
 }
