@@ -9,7 +9,7 @@ function parseSeconds() {
   } else if (combinedTime.length == 2) {
     var minutes = parseInt(combinedTime[0]);
     var seconds = parseInt(combinedTime[1]);
-    return (60 * minutes) + seconds;
+    return Math.abs((60 * minutes) + seconds);
   } else {
     return NaN;
   }
