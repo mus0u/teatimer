@@ -1,0 +1,32 @@
+body {
+  background-color: #3f3f3f;
+  color: #dcdccc;
+  font-family: monospace;
+  font-size: 8vw;
+  margin: auto;
+  text-align: center;
+}
+
+a {
+  background-color: #dcdccc;
+  color: #3f3f3f;
+  padding: 3px;
+  text-decoration: none;
+}
+
+#content {
+  font-size: 2vw;
+  width: 100%;
+}
+
+#countdown {
+  width: 100%;
+}
+
+#startButton {
+  background-color: #656555;
+  border: none;
+  color: #2b2b2b;
+  font-family: monospace;
+  font-size: 5vw;
+}
