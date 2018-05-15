@@ -7,6 +7,10 @@ body {
   text-align: center;
 }
 
+#footer {
+  font-size: 1vw;
+}
+
 a {
   background-color: #dcdccc;
   color: #3f3f3f;
