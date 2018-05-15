@@ -1,7 +1,5 @@
-teatimer.site... the site that times your tea.
+teatimer.site: the site that times your tea.
 
 written in no-frills, library-free javascript, and plain old html and css.
-
-why bother with anything more? it's just a countdown timer.
 
 MIT license.
