@@ -7,7 +7,7 @@ function parseSeconds() {
   if (combinedTime.length > 2) { return NaN; }
   if (minutes === 0 && seconds === 0) { return NaN; }
 
-  if (combinedTime.length === 1) { return 60 * minutes; }
+  if (combinedTime.length === 1) { return Math.abs(60 * minutes); }
 
   return Math.abs((60 * minutes) + seconds);
 }
