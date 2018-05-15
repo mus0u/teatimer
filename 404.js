@@ -1,16 +1,15 @@
 function parseSeconds() {
   var splitURL = window.location.toString().split("/");
   var combinedTime = splitURL[splitURL.length - 1].split("m");
+  var minutes = parseInt(combinedTime[0]) || 0;
+  var seconds = parseInt(combinedTime[1]) || 0;
 
-  if (combinedTime.length === 1) {
-    return (60 * combinedTime[0]);
-  } else if (combinedTime.length == 2) {
-    var minutes = parseInt(combinedTime[0]);
-    var seconds = parseInt(combinedTime[1]);
-    return Math.abs((60 * minutes) + seconds);
-  } else {
-    return NaN;
-  }
+  if (combinedTime.length > 2) { return NaN; }
+  if (minutes === 0 && seconds === 0) { return NaN; }
+
+  if (combinedTime.length === 1) { return 60 * minutes; }
+
+  return Math.abs((60 * minutes) + seconds);
 }
 
 function chime(audio) {
@@ -41,6 +40,7 @@ function startTimer() {
 function main() {
   var seconds = parseSeconds();
   if (isNaN(seconds)) {
+    window.location.replace("http://teatimer.site");
     return;
   }
   var countdown = document.createElement("span");
